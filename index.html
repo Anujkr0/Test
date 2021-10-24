@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        
+     * {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        body {
+            background-image: url(background.jpg);
+        }
+        .details {
+            min-height: 11vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .register {
+            background: #282b28;
+            padding: 25px;
+            border-radius: 5px;
+            width: 400px;
+        }
+        .register .title {
+            text-align: center;
+            font-size: 20px;
+            color: #ebebeb;
+            font-weight: 700;
+        }
+        .form {
+            margin-top: 35px;
+        }
+        .form .input {
+            margin-bottom: 15px;;
+        }
+        label {
+            display: block;
+            margin-bottom: 3px;
+            color: #959795;
+        }
+        .filldetails {
+            width: 100%;
+            border-radius: 3px;
+            border: 1px solid #959795;
+            padding: 10px;
+            outline: none;
+        }
+        .form ul {
+            background: #fff;
+            padding: 8px 10px;
+            border-radius: 3px;
+            display: flex;
+            justify-content: center;
+        }
+        .form ul li {
+            margin-right: 15px;
+        }
+        .form ul .radio {
+            position: relative;
+            margin-bottom: 0;
+        }
+        span {
+            display: inline-block;
+            font-size: 14px;
+            padding: 3px 20px;
+            border-radius: 3px;
+            color: #545854;
+        }
+      .submit{
+          width: 100%;
+          background: #ebd0eb;
+          padding: 10px;
+          border: 0;
+          border-radius: 3px;
+          
+          
+
+      }
+        
+    
+    </style>
+</head>
+<body>
+    <div class="details"> 
+        <div class="register">
+            <div class="title">
+                Registration Form
+
+            </div>
+            <form action="">
+                <div class="form">
+                    <div class="input">
+                        <div class="details">
+                            <label for="firstname">First Name</label>
+                            <input class="filldetails" type="text" id="firstname">
+
+                        </div>
+
+                        <div class="details">
+                            <label for="lastname">Last Name</label>
+                            <input class="filldetails" type="text" id="lastname">
+
+                        </div>
+
+                        
+
+                    </div>
+
+                    <div class="details">
+                        <label for="email">Email </label>
+                        <input  class="filldetails" type="text" id="email">
+
+                    </div>
+                    <div class="details">
+                        <label>Gender</label>
+                        <ul>
+                            <li>
+                                <label class="radio">
+
+                                    <input  class="filldetails" type="radio" name="gender" value="Male" class="inputradio">
+                                    <span>Male</span>
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="radio">
+
+                                    <input  class="filldetails" type="radio" name="gender" value="Female" class="inputradio">
+                                    <span>Female</span>
+                                </label>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="details">
+                        <label for="city">City</label>
+                        <input  class="filldetails" type="text" id="city">
+
+                    </div>
+                    <div class="details">
+                        <label for="country">Country</label>
+                        <input  class="filldetails" type="text" id="country">
+
+                    </div>
+                    <div class="details">
+                        
+                        <input  class="submit" type="submit" value="Submit" class="submit">
+
+                    </div>
+
+
+                </div>
+            </form>
+            
+        </div>
+    </div>
+</body>
+</html>
